@@ -20,14 +20,14 @@ flowchart LR
     subgraph Selenium Architecture
         subgraph Client Server
             direction RL
-            Client-- HTTP Request -->JWP/W3C-- HTTP Request -->id1[(Server)]
-            id1[(Server)]-- HTTP Response --->JWP/W3C--HTTP Response -->Client
+            Client-->JWP/W3C-->id1[(Server)]
+            
         end
         subgraph Browsers
             direction RL
-            id1[(Server)] --> Chrome
-            id1[(Server)] --> Edge
-            id1[(Server)] --> Firefox
+            id1[(Server)] -- HTTP Request -->Chrome
+            id1[(Server)] -- HTTP Request --> Edge
+            id1[(Server)] -- HTTP Request -->Firefox
         end
     end
 ```
