@@ -51,3 +51,52 @@ flowchart LR
     end
 ```
     
+## Installation
+There are multiple ways to generate the binary codes for different browsers.
+	1. Using MVN Package
+		One way is to directly run the code from the eclipse, it will download all the binaries under AppData\Local\ms-playwright
+		prior running the script and could be seen on the console.
+	2. Using cmd
+		Navigate to the project folder and run the below command, it will download all the binaries under AppData\Local\ms-playwright
+    	mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install"
+
+## Running a simple script
+	
+	Playwright playwright = Playwright.create();
+	Browser browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
+	Page page = browser.newPage();
+	page.navigate("https://www.amazon.com");
+	String title = page.title();
+	System.out.println("Page Title is " + title);
+	String url = page.url();
+	System.out.println("URL is " + url);
+	browser.close();
+	playwright.close();
+
+
+## Debugging a Script
+Add an environment variable under Run Configuration for any script:
+	
+	PWDEBUG : 1
+
+or use 
+	
+	page.pause()
+
+### CodeGen
+CodeGen is a feature from Playwright to record and play and generate a script,Enter the below command(ensure maven is installed)
+
+	mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen <<WebSite URL>>"
+Copy the script generated inside the playwright inspector and use it.
+
+### Trace Viewer
+TraceViewer is a beautiful feature from Playwright to record the traces like meta data, console logs, api, Action Before and After,etc. Its a unique feature that helps in debugging or capturing details w.r.t. to a workflow or test script.
+Once the traces are executed, trace.zip is created that could be seen either in he following manner
+1. Using browser
+ 	Drop your trace file here: https://trace.playwright.dev/
+2. Using cmd
+
+	mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="show-trace trace.zip"
+
+### BrowserContext
+BrowserContext allows user to open multiple sessions of a browser i.e. browser context inside a single test.
