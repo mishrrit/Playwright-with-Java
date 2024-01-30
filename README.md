@@ -100,3 +100,19 @@ Once the traces are executed, trace.zip is created that could be seen either in 
 
 ### BrowserContext
 BrowserContext allows user to open multiple sessions of a browser i.e. browser context inside a single test.
+
+
+### Locators
+There are few built in locators from Playwright and are recommended to use:
+
+		Page.getByRole() to locate by explicit and implicit accessibility attributes.
+		Page.getByText() to locate by text content.
+		Page.getByLabel() to locate a form control by associated label's text.
+		Page.getByPlaceholder() to locate an input by placeholder.
+		Page.getByAltText() to locate an element, usually image, by its text alternative.
+		Page.getByTitle() to locate an element by its title attribute.
+		Page.getByTestId() to locate an element based on its data-testid attribute (other attributes can be configured).
+
+## Reference
+	https://playwright.dev/java/docs/intro
+	
