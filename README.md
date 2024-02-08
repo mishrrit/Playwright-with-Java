@@ -113,6 +113,27 @@ There are few built in locators from Playwright and are recommended to use:
 		Page.getByTitle() to locate an element by its title attribute.
 		Page.getByTestId() to locate an element based on its data-testid attribute (other attributes can be configured).
 
+##  Relative Locators
+        
+        right-of
+        left-of
+        above
+        below
+        near
+        near,200
+## Nth locator
+        >> nth = 0
+        >> nth = -1
+        
+### Using Chrome Dev Tools for PLaywright Inspector
+When it comes to validate the xpath, the first thing any QA would do it to open the Dev Tools and validate the xpath, css, etc. But when you are working with Playwright, there are couple of inbuilt locators that doesn't work with Dev Tools.
+In such case, Do follow the below steps:
+	
+	1. Run Codegen for the website where you want to inspect element.
+	2. Go to Dev Tool on the launched Browser.
+	3. Start using playwright inbuilt commands under Console. For ex. playwright.$(<locator>)
+
+
 ## Reference
 	https://playwright.dev/java/docs/intro
 	
