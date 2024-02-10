@@ -1,0 +1,67 @@
+<mxfile host="Electron" modified="2024-02-10T15:26:45.447Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="6RJezeHSrxLvIub_qtvC" version="23.0.2" type="device">
+  <diagram name="Page-1" id="n8c3NdNe4aQo2pRcApg9">
+    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Xk8jDlWGTrxrqy1YXSmu-1" target="Xk8jDlWGTrxrqy1YXSmu-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-1" value="2. Base Class" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="330" y="80" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Xk8jDlWGTrxrqy1YXSmu-2" target="Xk8jDlWGTrxrqy1YXSmu-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-2" value="3. PlaywrightFactory.java&lt;br&gt;initPlaywright()&lt;br&gt;initProperties()" style="whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="500" y="75" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-5" value="4. Config.properties&lt;br&gt;browser&lt;br&gt;url&lt;br&gt;username/pwd&lt;br&gt;headless" style="whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="730" y="75" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#fa6800;strokeColor=#000000;" edge="1" parent="1" source="Xk8jDlWGTrxrqy1YXSmu-7" target="Xk8jDlWGTrxrqy1YXSmu-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Xk8jDlWGTrxrqy1YXSmu-7" target="Xk8jDlWGTrxrqy1YXSmu-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Xk8jDlWGTrxrqy1YXSmu-7" target="Xk8jDlWGTrxrqy1YXSmu-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Xk8jDlWGTrxrqy1YXSmu-7" target="Xk8jDlWGTrxrqy1YXSmu-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-7" value="1. Test Case&lt;br&gt;TC01&lt;br&gt;TC02" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="315" y="280" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-10" value="5. Page Layer&lt;br&gt;String locators&lt;br&gt;Page Actions&lt;br&gt;&lt;br&gt;LoginPage.java&lt;br&gt;ProductPage.java" style="whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="60" y="236.25" width="150" height="197.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Xk8jDlWGTrxrqy1YXSmu-12" target="Xk8jDlWGTrxrqy1YXSmu-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-12" value="6. Utils&lt;br&gt;Utlities&lt;br&gt;Exception Handling&lt;br&gt;ReadfromExcel&lt;br&gt;AppError&lt;br&gt;Constants" style="whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="505" y="272.5" width="150" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-14" value="7. Test Data&lt;br&gt;Excel with Data" style="whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="750" y="305" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Xk8jDlWGTrxrqy1YXSmu-16" target="Xk8jDlWGTrxrqy1YXSmu-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-16" value="8. Reporting&lt;br&gt;Allure&lt;br&gt;Extent&lt;br&gt;TestNg&lt;br&gt;&lt;br&gt;Report Listener" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="315" y="470" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Xk8jDlWGTrxrqy1YXSmu-18" target="Xk8jDlWGTrxrqy1YXSmu-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-18" value="GIT&lt;br&gt;Master&lt;br&gt;Feature" style="whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="310" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xk8jDlWGTrxrqy1YXSmu-22" value="CI/CD Pipeline&lt;br&gt;Jenkins&lt;br&gt;GitHub" style="ellipse;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="590" y="622.5" width="160" height="135" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

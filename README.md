@@ -32,8 +32,7 @@ flowchart LR
     end
 ```
 
-But the architecture of the playwright is not the same as Selenium, It's not based on an HTTP connection but on a WebSocket Connection. A WebSocket connection is a type of connection that is based on a handshaking mechanism i.e. when the request is sent
-from a client to the Server, both the client and server acknowledge the request tunneling is maintained and bidirectional communication can now take place between the client and server. It allows the session to be maintained until the connection is either closed from the client or Server. So once the server is up and running, one can send multiple requests at a time without login every time, unlike Selenium where a new login is maintained per each request.
+But the architecture of the playwright is not the same as Selenium, It's not based on an HTTP connection but on a WebSocket Connection. A WebSocket connection is a type of connection that is based on a handshaking mechanism i.e. when the request is sent from a client to the Server, both the client and server acknowledge the request tunneling is maintained and bidirectional communication can now take place between the client and server. It allows the session to be maintained until the connection is either closed from the client or Server. So once the server is up and running, one can send multiple requests at a time without login every time, unlike Selenium where a new login is maintained per each request.
 
 ```mermaid
 flowchart LR
@@ -125,13 +124,29 @@ There are few built in locators from Playwright and are recommended to use:
         >> nth = 0
         >> nth = -1
         
-### Using Chrome Dev Tools for PLaywright Inspector
+### Using Chrome Dev Tools for Playwright Inspector
 When it comes to validate the xpath, the first thing any QA would do it to open the Dev Tools and validate the xpath, css, etc. But when you are working with Playwright, there are couple of inbuilt locators that doesn't work with Dev Tools.
 In such case, Do follow the below steps:
 	
 	1. Run Codegen for the website where you want to inspect element.
 	2. Go to Dev Tool on the launched Browser.
 	3. Start using playwright inbuilt commands under Console. For ex. playwright.$(<locator>)
+
+## Automation Framework
+
+```mermaid
+flowchart LR    
+        subgraph POM Model with Hybrid Framework
+            direction LR
+            id1[(1.TestClass)] -->2.BaseClass-->3.PlaywrightFactory -->4.Config.properties         
+        
+            direction LR
+            id1[(1.TestClass)] --> 5.PageLayer 
+            id1[(1.TestClass)] --> 6.Utils -->7.TestData
+            id1[(1.TestClass)] --> 8.Reporting 
+            id1[(1.TestClass)] --> GIT -->CI/CD
+        end
+ ```   
 
 
 ## Reference
