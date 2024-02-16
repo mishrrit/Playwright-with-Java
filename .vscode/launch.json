@@ -1,0 +1,186 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        
+        {
+            "type": "java",
+            "name": "Run TestNG Suite",
+            "request": "launch",
+            "mainClass": "org.testng.TestNG",
+            "args": "-d \"testng_output_dir\" -testnames \"HomePageTest\" D:\\backup\\Playwright With Java\\testng.xml",
+            "vmArgs": "-Dname=value"
+        },  
+        {
+            "type": "java",
+            "name": "Auth",
+            "request": "launch",
+            "mainClass": "playwrightsessions.Auth",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "BrowserContextConcept",
+            "request": "launch",
+            "mainClass": "playwrightsessions.BrowserContextConcept",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "BrowserSize",
+            "request": "launch",
+            "mainClass": "playwrightsessions.BrowserSize",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "CodeGenExample",
+            "request": "launch",
+            "mainClass": "playwrightsessions.CodeGenExample",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "DownloadFile",
+            "request": "launch",
+            "mainClass": "playwrightsessions.DownloadFile",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "DynamicLocator",
+            "request": "launch",
+            "mainClass": "playwrightsessions.DynamicLocator",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "FrameHandle",
+            "request": "launch",
+            "mainClass": "playwrightsessions.FrameHandle",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "HasElements",
+            "request": "launch",
+            "mainClass": "playwrightsessions.HasElements",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "JsPopUpHandle",
+            "request": "launch",
+            "mainClass": "playwrightsessions.JsPopUpHandle",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "LocatorsConept",
+            "request": "launch",
+            "mainClass": "playwrightsessions.LocatorsConept",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "MoreonLocators",
+            "request": "launch",
+            "mainClass": "playwrightsessions.MoreonLocators",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "MultipleFileUpload",
+            "request": "launch",
+            "mainClass": "playwrightsessions.MultipleFileUpload",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "NthElementSelector",
+            "request": "launch",
+            "mainClass": "playwrightsessions.NthElementSelector",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "PlaywrightBasics",
+            "request": "launch",
+            "mainClass": "playwrightsessions.PlaywrightBasics",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "RecordTraceViewer",
+            "request": "launch",
+            "mainClass": "playwrightsessions.RecordTraceViewer",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "RelativeLocators",
+            "request": "launch",
+            "mainClass": "playwrightsessions.RelativeLocators",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "ShadowDomElement",
+            "request": "launch",
+            "mainClass": "playwrightsessions.ShadowDomElement",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "TakeScreenshot",
+            "request": "launch",
+            "mainClass": "playwrightsessions.TakeScreenshot",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "TextSelectors",
+            "request": "launch",
+            "mainClass": "playwrightsessions.TextSelectors",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "UsingAuth",
+            "request": "launch",
+            "mainClass": "playwrightsessions.UsingAuth",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "VideoRecording",
+            "request": "launch",
+            "mainClass": "playwrightsessions.VideoRecording",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "VisibleElements",
+            "request": "launch",
+            "mainClass": "playwrightsessions.VisibleElements",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "WindowPopUp",
+            "request": "launch",
+            "mainClass": "playwrightsessions.WindowPopUp",
+            "projectName": "Sessions"
+        },
+        {
+            "type": "java",
+            "name": "XpathLocator",
+            "request": "launch",
+            "mainClass": "playwrightsessions.XpathLocator",
+            "projectName": "Sessions"
+        }
+    ]
+}
