@@ -1,4 +1,11 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive",
-    "java.dependency.packagePresentation": "hierarchical"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.dependency.packagePresentation": "hierarchical",
+
+    "maven.terminal.favorites": [
+        {
+            "alias": "full build without tests",
+            "command": "mvn clean install -DskipTests"
+        }
+    ]
 }

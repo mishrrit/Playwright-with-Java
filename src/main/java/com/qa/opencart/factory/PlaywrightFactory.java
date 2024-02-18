@@ -3,6 +3,8 @@ package com.qa.opencart.factory;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 import com.microsoft.playwright.Browser;
@@ -11,6 +13,8 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
+
+
 public class PlaywrightFactory {
 
     Playwright playwright;
@@ -18,6 +22,7 @@ public class PlaywrightFactory {
     BrowserContext browserContext;
     Page page;
     Properties prop;
+    Path path;
 
     /**
      * ThreadLocal variables to store Playwright browser, context, page instances
@@ -82,8 +87,8 @@ public class PlaywrightFactory {
                         .set(playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false)));
                 break;
             case "chrome":
-                // browser = playwright.webkit().launch(new
-                // BrowserType.LaunchOptions().setHeadless(false));
+                 //browser = playwright.webkit().launch(new
+                 //BrowserType.LaunchOptions().setHeadless(false));
                 browserThreadLocal
                         .set(playwright.chromium()
                                 .launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false)));
@@ -127,5 +132,14 @@ public class PlaywrightFactory {
 
         return prop;
 
+    }
+
+    public static String takeScreenshot() {
+        String path = System.getProperty("user.dir") + "/screenshots/" + System.currentTimeMillis() + ".png";
+
+        getPage().screenshot(new Page.ScreenshotOptions()
+            .setPath(Paths.get(path))
+            .setFullPage(true));
+        return path;
     }
 }

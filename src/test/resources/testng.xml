@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Playwright With Java" verbose="2">
+
+<suite name="Playwright With Java" thread-count="2">
+    
     <test name="HomePage Test">
         <classes>
             <class name="com.qa.opencart.tests.HomePageTest"/>
-        </classes>
+        </classes>               
     </test>
-    <test name="LoginPage Test">
+    <test name="Login Test">
         <classes>
             <class name="com.qa.opencart.tests.LoginPageTest"/>
-        </classes>
+        </classes>               
     </test>
+    
+    
 </suite>

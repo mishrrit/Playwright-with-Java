@@ -1,0 +1,17 @@
+{
+    "name": "my-playwright-project",
+    "version": "1.0.0",
+    "description": "A Playwright project with TestNG",
+    "scripts": {
+      "test": "npx playwright test",
+      "build": "npx playwright build"
+    },
+    "dependencies": {
+      "@playwright/test": "^1.21.0",
+      "testng": "^7.5.0"
+    },
+    "devDependencies": {
+      "@types/playwright": "^1.21.0",
+      "@types/testng": "^7.5.0"
+    }
+  }
