@@ -148,6 +148,20 @@ flowchart LR
         end
  ```   
 
+## Running in Selenium Grid
+
+    1. Pre-requisite:
+        Docker desktop is preinstalled and running.
+    2. Navigate to the root directory and run the below command where docker-compose.yaml file is present.
+        docker-compose up -d
+    3. Once the containers are up and running, verify the following
+        docker ps -a
+    4. Running the maven test on selnium grid, run the following command, ensure the url matches with SE_NODE_GRID_URL inside the yaml file
+        SELENIUM_REMOTE_URL=http://127.0.0.1:4444 mvn test
+    5. Navigate to the above url and verify the above running tests
+        http://127.0.0.1:4444
+
+
 
 ## Reference
 	https://playwright.dev/java/docs/intro
